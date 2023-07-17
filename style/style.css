@@ -5,8 +5,9 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
 /* _________________ Shared style ________________ */
-.btn-primary{
+.btn-primary {
     border-radius: 8px;
     background: #FF900E;
     padding: 20px 24px;
@@ -18,12 +19,14 @@
     margin: 32px auto 50px;
     cursor: pointer;
 }
+
 .bold-black-text {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
-.all-description{
+
+.all-description {
     color: #727272;
     font-weight: 400;
 }
@@ -31,125 +34,171 @@
 
 
 /* _________ header style ________ */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     list-style: none;
 }
 
-nav > ul a{
+nav>ul a {
     text-decoration: none;
-    color:#424242;
+    color: #424242;
     font-size: 18px;
     font-weight: 500;
     /* line-height: 26px; */
-    margin-right:30px ;
+    margin-right: 30px;
 }
+
 /* ______________________ banner-text-style _____________________ */
-.banner-text-style{
+.banner-text-style {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
-    color:#131313;
+
+.banner-title {
+    color: #131313;
     font-size: 64px;
-    font-weight: 700;    
+    font-weight: 700;
 }
-.banner-img  img{
+
+.banner-img img {
     width: 100%;
 }
+
 /* ______________________________ main style__________________________________ */
-main{
+main {
     max-width: 1440px;
     margin: 70px auto;
 }
+
 /* feature-1 style */
-.feature-section{
+.feature-section {
     display: flex;
     align-items: center;
 }
-.feature-img{
+
+.feature-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.feature-text{
-    padding-right:70px ;
+.main-feature .ten-year-badge{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    align-items: center;
+    padding: 45px 42px;
+    padding-top: 0;
+    text-align: center;
+}
+.main-feature .ten-year-badge > h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.main-feature .ten-year-badge > p{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+   
+}
+
+
+
+.feature-text {
+    padding-right: 70px;
     padding-left: 70px;
 }
-.feature-title{
+
+.feature-title {
     width: 468px;
     font-size: 45px;
 }
-.feature-title .of-our-design{
+
+.feature-title .of-our-design {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
-.feature-title .feature-design{
+
+.feature-title .feature-design {
     color: #FF900E;
     font-size: 45px;
     font-weight: 700;
 }
-.feature-description{
+
+.feature-description {
     width: 537px;
     color: #727272;
     line-height: 26px;
     margin-top: 24px;
     margin-bottom: 32px;
 }
+
 /* feature-3 style */
-.features-title{
+.features-title {
     margin-bottom: 20px;
 }
+
 /* _________________ facts-card-container style ________________ */
 
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
     margin-bottom: 150px;
 }
-.facts-card-container .card{
+
+.facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 40px 30px;
 }
-.facts-card-container .card .card-stats{
-    color:#424242;
+
+.facts-card-container .card .card-stats {
+    color: #424242;
     font-size: 45px;
     font-weight: 600;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
-.facts-card-container .card .card-title{
-    color:#727272;
+
+.facts-card-container .card .card-title {
+    color: #727272;
     font-size: 20px;
     font-weight: 600;
     margin-top: 0;
 }
 
 /* ______________________________ Sponsors style _____________________________ */
-.sponsors-text{
+.sponsors-text {
     width: 542px;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
-.sponsors-text .sponsors-title{
+
+.sponsors-text .sponsors-title {
     margin-bottom: 0;
 }
+
 /* Sponsors img style */
-.sponsors-img-container{
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -157,10 +206,24 @@ main{
     gap: 20px;
 }
 
+/* _________________________________ start main Features _______________________________ */
+.teams-container {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
 
-
-
-
+.feature-content .feature-card-section {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-content > .bold-black-text{
+    border-left:5px solid #FF900E;
+    padding-left: 21px;
+}
 
 
 
@@ -172,66 +235,77 @@ main{
 /* ________________________ responsive media queries _______________________ */
 /* mobile devices */
 @media screen and (max-width:576px) {
-    header{
-            padding: 10px 20px;
+    header {
+        padding: 10px 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
+
     /* ___features section responsive___ */
-    main{
+    main {
         max-width: 1440px;
         margin: 70px 0;
     }
-    .feature-section{
+
+    .feature-section {
         flex-direction: column;
     }
-    .feature-img{
+
+    .feature-img {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .feature-text{
-        padding-right:10px ;
+
+    .feature-text {
+        padding-right: 10px;
         padding-left: 10px;
     }
-    .feature-description{
+
+    .feature-description {
         width: 99%;
     }
 
     /* facts-card-container style*/
 
-    .facts-card-container{
+    .facts-card-container {
         flex-direction: column;
     }
-    .feature-title{
+
+    .feature-title {
         width: 100%;
     }
-    .sponsors-img-container{
+
+    .sponsors-img-container {
         flex-direction: column;
     }
-    .sponsors-img-container img{
+
+    .sponsors-img-container img {
         width: 165px;
     }
-    .sponsors-text{
+
+    .sponsors-text {
         width: auto;
     }
-    
+
 
 }
 
 
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:996px) {
-    header{
+    header {
         padding: 20px 30px;
     }
 
-     /* ___features section responsive___ */
-     main{
+    /* ___features section responsive___ */
+    main {
         max-width: 1440px;
         margin: 70px 0;
     }
-    .feature-section{
+
+    .feature-section {
         flex-direction: column;
     }
 
@@ -239,14 +313,3 @@ main{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
